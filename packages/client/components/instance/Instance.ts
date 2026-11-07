@@ -44,7 +44,10 @@ export default class Instance {
     this.mediaUrl = apiCfg.features.autumn.url;
     this.proxyUrl = apiCfg.features.january.url;
     //TODO Gifbox URL from backend
-    this.gifboxUrl = CONFIGURATION.DEV_GIFBOX_URL || "https://api.gifbox.me";
+    this.gifboxUrl =
+      CONFIGURATION.DEV_GIFBOX_URL ||
+      CONFIGURATION.GIFBOX_URL ||
+      "https://api.gifbox.me";
 
     //Features
     this.config = apiCfg;

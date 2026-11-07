@@ -38,13 +38,15 @@ export default {
   /** API URL of default instance */
   DEFAULT_API_URL,
   /** WS server override for development */
-  DEV_WS_URL: getEnv("VITE_DEV_WS_URL"),
+  DEV_WS_URL: getEnv("VITE_DEV_WS_URL", true),
   /** Media server override for development */
-  DEV_MEDIA_URL: getEnv("VITE_DEV_MEDIA_URL"),
+  DEV_MEDIA_URL: getEnv("VITE_DEV_MEDIA_URL", true),
   /** Proxy server override for development */
-  DEV_PROXY_URL: getEnv("VITE_DEV_PROXY_URL"),
+  DEV_PROXY_URL: getEnv("VITE_DEV_PROXY_URL", true),
   /** Gifbox server override for development */
-  DEV_GIFBOX_URL: getEnv("VITE_DEV_GIFBOX_URL"),
+  DEV_GIFBOX_URL: getEnv("VITE_DEV_GIFBOX_URL", true),
+  /** Gifbox URL for production / self-hosted builds */
+  GIFBOX_URL: getEnv("VITE_GIFBOX_URL"),
   /**
    * RNNoise worklet CDN host location. Defaults to blank, which uses the url provided by the livekit-rnnoise-processor package.
    */
