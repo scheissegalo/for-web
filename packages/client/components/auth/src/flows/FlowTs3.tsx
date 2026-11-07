@@ -42,9 +42,9 @@ function errorMessage(error: unknown): string {
     case "InvalidToken":
       return "That code is not correct, or it has expired. Check TeamSpeak and try again.";
     case "NotFound":
-      return "Your TeamSpeak client went offline. Start over and keep TeamSpeak connected.";
+      return "Your TeamSpeak client went offline or the code expired. Start over and keep TeamSpeak connected.";
     case "InSlowmode":
-      return "Too many attempts. Wait a minute and try again.";
+      return "Too many attempts. Wait a few minutes and try again.";
     case "FeatureDisabled":
       return "TeamSpeak login is not enabled on this instance.";
     case "InternalError":
