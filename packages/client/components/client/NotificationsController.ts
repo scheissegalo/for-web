@@ -12,6 +12,28 @@ import pushWorker from "/src/pushWorker?worker&url";
 const PushPrefix = "/?@";
 const pwPath = pushWorker.slice(0, pushWorker.lastIndexOf("/")) + PushPrefix;
 
+type BraveNavigator = Navigator & {
+  brave?: { isBrave?: () => Promise<boolean> };
+};
+
+function isPushServiceError(error: unknown) {
+  return (
+    error instanceof DOMException &&
+    error.name === "AbortError" &&
+    /push service error/i.test(error.message)
+  );
+}
+
+async function isBraveBrowser() {
+  const brave = (navigator as BraveNavigator).brave;
+  if (!brave) return false;
+  try {
+    return typeof brave.isBrave === "function" ? await brave.isBrave() : true;
+  } catch {
+    return true;
+  }
+}
+
 export function useNotifications() {
   const { settings, auth } = useState();
   const { t } = useLingui();
@@ -116,7 +138,10 @@ export function useNotifications() {
     } catch (e) {
       console.error(e);
       snackbar.show({
-        message: t`Failed to enable push notifications. Please try again later.`,
+        message:
+          isPushServiceError(e) && (await isBraveBrowser())
+            ? t`Brave blocks push notifications by default. Enable "Use Google services for push messaging" in Brave settings, or use Chrome or Firefox.`
+            : t`Failed to enable push notifications. Please try again later.`,
       });
       settings.pushNotificationsState = "default";
     }

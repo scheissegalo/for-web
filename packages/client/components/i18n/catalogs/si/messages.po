@@ -654,6 +654,10 @@ msgstr "අවහිර කළ පරිශීලකයෙකි"
 msgid "Bot"
 msgstr "ස්වයංක්‍රමලේඛය"
 
+#: components/client/NotificationsController.ts
+msgid "Brave blocks push notifications by default. Enable \"Use Google services for push messaging\" in Brave settings, or use Chrome or Firefox."
+msgstr ""
+
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
 msgid "Browser"
 msgstr ""
