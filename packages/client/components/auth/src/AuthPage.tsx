@@ -95,7 +95,7 @@ const Brand = styled("div", {
   base: {
     position: "relative",
     zIndex: 1,
-    width: "132px",
+    width: "200px",
     height: "auto",
 
     display: "flex",
@@ -541,7 +541,7 @@ export function AuthPage(props: { children: JSX.Element }) {
                 fallback={
                   <>
                     <span>
-                      <Trans>New to Stoat?</Trans>
+                      <Trans>New to North Chat?</Trans>
                     </span>
                     <A href="/login/create">
                       <Trans>Create account</Trans>
@@ -633,13 +633,13 @@ export function AuthPage(props: { children: JSX.Element }) {
 
           <Footer>
             <nav aria-label="Legal">
-              <a href="https://stoat.chat/terms" target="_blank">
+              <a href="https://north-industries.com/terms" target="_blank">
                 <Trans>Terms</Trans>
               </a>
-              <a href="https://stoat.chat/privacy" target="_blank">
+              <a href="https://north-industries.com/privacy" target="_blank">
                 <Trans>Privacy</Trans>
               </a>
-              <a href="https://support.stoat.chat/" target="_blank">
+              <a href="https://north-industries.com/support/" target="_blank">
                 <Trans>Help</Trans>
               </a>
             </nav>
@@ -652,7 +652,7 @@ export function AuthPage(props: { children: JSX.Element }) {
                 <GitHub width={20} height={20} />
               </a>
               <a
-                href="https://bsky.app/profile/stoat.chat"
+                href="https://north-industries.com"
                 target="_blank"
                 aria-label="Bluesky"
               >

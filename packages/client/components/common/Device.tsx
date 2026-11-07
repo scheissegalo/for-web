@@ -34,7 +34,7 @@ export class Device {
    * Granular feature-detection is preferred when possible. */
   readonly isMobile: boolean;
 
-  /** If Stoat is running as a web app */
+  /** If North Chat is running as a web app */
   readonly isPWA =
     //Safari
     (window.navigator as never as { standalone: boolean }).standalone ||

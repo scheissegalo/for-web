@@ -1,7 +1,7 @@
-export const STOAT_HOST = "stoat.chat";
-const STOAT_API = "https://api.stoat.chat";
+export const NORTH_CHAT_HOST = "talk.north-industries.com";
+const NORTH_CHAT_API = "https://talk.north-industries.com/api";
 
-/** App `stoat.json` endpoint format */
+/** App config endpoint format */
 export interface AppConfig {
   api: string;
 }
@@ -15,37 +15,21 @@ const getEnv = (name: string, devOnly?: boolean) =>
     ? (import.meta.env[name] as string)
     : undefined;
 
-/** If host is Stoat, normalize to STOAT_HOST, else return host */
-export const normalizeHost = (host: string) =>
-  [
-    // historically...
-    "api.revolt.chat",
-    "beta.revolt.chat",
-    "revolt.chat",
-    // ... and now:
-    "api.stoat.chat",
-    "beta.stoat.chat",
-  ].includes(host)
-    ? STOAT_HOST
-    : host;
+/** North Chat is a single self-hosted instance, so hosts are not rewritten. */
+export const normalizeHost = (host: string) => host;
 
-const isStoatOfficialAPI = (api: string) =>
-  [
-    "https://api.revolt.chat",
-    "https://api.stoat.chat",
-    "https://stoat.chat/api",
-    "https://beta.stoat.chat/api",
-    "canary-api.stoat.chat",
-  ].includes(api);
+const isNorthChatAPI = (api: string) => api === NORTH_CHAT_API;
 
 const DEFAULT_HOST = normalizeHost(
-  getEnv("VITE_DEV_HOST", true) || getEnv("VITE_HOST") || STOAT_HOST,
+  getEnv("VITE_DEV_HOST", true) ||
+    getEnv("VITE_HOST") ||
+    NORTH_CHAT_HOST,
 );
 
 const DEFAULT_API_URL =
-  getEnv("VITE_DEV_API_URL", true) || getEnv("VITE_API_URL") || STOAT_API;
+  getEnv("VITE_DEV_API_URL", true) || getEnv("VITE_API_URL") || NORTH_CHAT_API;
 
-if (!isStoatOfficialAPI(DEFAULT_API_URL) && DEFAULT_HOST === STOAT_HOST)
+if (!isNorthChatAPI(DEFAULT_API_URL) && DEFAULT_HOST === NORTH_CHAT_HOST)
   console.error("VITE_HOST required when VITE_API_URL is set!");
 
 export default {

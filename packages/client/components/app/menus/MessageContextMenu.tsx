@@ -117,7 +117,7 @@ export function MessageContextMenu(props: {
   }
 
   /**
-   * Open message in Stoat Admin Panel
+   * Open message in North Chat Admin Panel
    */
   function openAdminPanel() {
     window.open(

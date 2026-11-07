@@ -1,7 +1,7 @@
 import { SelectedTheme } from "@revolt/state/stores/Theme";
 
 /**
- * Generate Stoat for Web variables
+ * Generate North Chat for Web variables
  * @param theme Theme
  * @returns CSS Variables
  */

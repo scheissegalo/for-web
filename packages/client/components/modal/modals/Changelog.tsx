@@ -20,7 +20,7 @@ export interface ChangelogResponse {
   updated_at?: string;
 }
 
-const CHANGELOG_ENDPOINT = "https://changelog.stoat.chat/v1/changelogs/latest";
+const CHANGELOG_ENDPOINT = "https://north-industries.com/changelog.json";
 
 export async function fetchLatestChangelog(): Promise<ChangelogResponse | null> {
   try {

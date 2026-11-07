@@ -852,8 +852,8 @@ msgstr "Check your email"
 #~ msgstr "Check your mail!"
 
 #: components/auth/src/flows/FlowConfirmReset.tsx
-msgid "Choose a new password for your Stoat account."
-msgstr "Choose a new password for your Stoat account."
+msgid "Choose a new password for your North Chat account."
+msgstr "Choose a new password for your North Chat account."
 
 #: components/auth/src/flows/FlowLogin.tsx
 msgid "Choose a username"
@@ -1088,8 +1088,8 @@ msgid "Could not find what you requested."
 msgstr "Could not find what you requested."
 
 #: components/instance/index.tsx
-msgid "Couldn't fetch Stoat configuration from {hStr}."
-msgstr "Couldn't fetch Stoat configuration from {hStr}."
+msgid "Couldn't fetch North Chat configuration from {hStr}."
+msgstr "Couldn't fetch North Chat configuration from {hStr}."
 
 #: components/ui/components/design/ImageCropper.tsx
 msgid "Couldn't load this image."
@@ -1445,8 +1445,8 @@ msgid "Discover"
 msgstr "Discover"
 
 #: src/interface/Home.tsx
-msgid "Discover Stoat"
-msgstr "Discover Stoat"
+msgid "Discover North Chat"
+msgstr "Discover North Chat"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Display & Text"
@@ -1493,12 +1493,12 @@ msgid "Donate"
 msgstr "Donate"
 
 #: src/interface/Home.tsx
-msgid "Donate to Stoat"
-msgstr "Donate to Stoat"
+msgid "Donate to North Chat"
+msgstr "Donate to North Chat"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Donated to Stoat"
-msgstr "Donated to Stoat"
+msgid "Donated to North Chat"
+msgstr "Donated to North Chat"
 
 #: components/modal/modals/MFARecovery.tsx
 msgid "Done"
@@ -1697,8 +1697,8 @@ msgid "Extreme violence, gore or animal cruelty"
 msgstr "Extreme violence, gore or animal cruelty"
 
 #: components/client/NotificationsController.ts
-msgid "Failed to enable notifications. Stoat does not have notification permission."
-msgstr "Failed to enable notifications. Stoat does not have notification permission."
+msgid "Failed to enable notifications. North Chat does not have notification permission."
+msgstr "Failed to enable notifications. North Chat does not have notification permission."
 
 #: components/client/NotificationsController.ts
 msgid "Failed to enable push notifications. Please try again later."
@@ -1817,24 +1817,24 @@ msgid "Get it on Google Play"
 msgstr "Get it on Google Play"
 
 #: components/auth/src/AppUpsell.tsx
-msgid "Get Stoat for Android and keep up with your friends wherever you are."
-msgstr "Get Stoat for Android and keep up with your friends wherever you are."
+msgid "Get North Chat for Android and keep up with your friends wherever you are."
+msgstr "Get North Chat for Android and keep up with your friends wherever you are."
 
 #: components/auth/src/AppUpsell.tsx
 msgid "Get the desktop app for Windows, macOS and Linux and keep your conversations one click away."
 msgstr "Get the desktop app for Windows, macOS and Linux and keep your conversations one click away."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
-msgid "Gifbox is our own GIF service, so you can keep sharing GIFs right here on Stoat."
-msgstr "Gifbox is our own GIF service, so you can keep sharing GIFs right here on Stoat."
+msgid "Gifbox is our own GIF service, so you can keep sharing GIFs right here on North Chat."
+msgstr "Gifbox is our own GIF service, so you can keep sharing GIFs right here on North Chat."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "GIFs are now powered by Gifbox"
 msgstr "GIFs are now powered by Gifbox"
 
 #: src/interface/Home.tsx
-msgid "Give feedback on Stoat"
-msgstr "Give feedback on Stoat"
+msgid "Give feedback on North Chat"
+msgstr "Give feedback on North Chat"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Give us some detail"
@@ -1858,8 +1858,8 @@ msgstr "Go to account settings to edit your username"
 
 #: components/app/interface/settings/user/Feedback.tsx
 #: src/interface/Home.tsx
-msgid "Go to the Stoat Lounge"
-msgstr "Go to the Stoat Lounge"
+msgid "Go to the North Chat Lounge"
+msgstr "Go to the North Chat Lounge"
 
 #: src/interface/Home.tsx
 #~ msgid "Go to the testers server"
@@ -1916,8 +1916,8 @@ msgid "Help contribute to an existing or new language"
 msgstr "Help contribute to an existing or new language"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Helped translate Stoat"
-msgstr "Helped translate Stoat"
+msgid "Helped translate North Chat"
+msgstr "Helped translate North Chat"
 
 #. placeholder {0}: link()
 #: components/modal/modals/CreateInvite.tsx
@@ -1974,16 +1974,16 @@ msgid "Impersonation"
 msgstr "Impersonation"
 
 #: src/AndroidNag.tsx
-msgid "In the meantime, install Stoat from Google Play for a faster, smoother experience designed for Android."
-msgstr "In the meantime, install Stoat from Google Play for a faster, smoother experience designed for Android."
+msgid "In the meantime, install North Chat from Google Play for a faster, smoother experience designed for Android."
+msgstr "In the meantime, install North Chat from Google Play for a faster, smoother experience designed for Android."
 
 #: components/app/interface/settings/user/voice/VoiceInputOptions.tsx
 msgid "Input Volume"
 msgstr "Input Volume"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Instead of closing, Stoat will hide in your tray."
-msgstr "Instead of closing, Stoat will hide in your tray."
+msgid "Instead of closing, North Chat will hide in your tray."
+msgstr "Instead of closing, North Chat will hide in your tray."
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Interface Font"
@@ -2048,13 +2048,13 @@ msgstr "Join a server"
 #~ msgstr "Join call"
 
 #: components/auth/src/flows/FlowCreate.tsx
-msgid "Join Stoat"
-msgstr "Join Stoat"
+msgid "Join North Chat"
+msgstr "Join North Chat"
 
 #: components/app/interface/settings/user/Feedback.tsx
 #: src/interface/Home.tsx
-msgid "Join the Stoat Lounge"
-msgstr "Join the Stoat Lounge"
+msgid "Join the North Chat Lounge"
+msgstr "Join the North Chat Lounge"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
@@ -2112,16 +2112,16 @@ msgid "Latest"
 msgstr "Latest"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Launch Stoat when you log into your computer."
-msgstr "Launch Stoat when you log into your computer."
+msgid "Launch North Chat when you log into your computer."
+msgstr "Launch North Chat when you log into your computer."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "Learn more"
 msgstr "Learn more"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Learn more about how to create bots on Stoat."
-msgstr "Learn more about how to create bots on Stoat."
+msgid "Learn more about how to create bots on North Chat."
+msgstr "Learn more about how to create bots on North Chat."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -2144,8 +2144,8 @@ msgid "Leave server"
 msgstr "Leave server"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Let Stoat use its own custom titlebar."
-msgstr "Let Stoat use its own custom titlebar."
+msgid "Let North Chat use its own custom titlebar."
+msgstr "Let North Chat use its own custom titlebar."
 
 #: src/interface/Home.tsx
 msgid "Let us know how we can improve our app by giving us feedback."
@@ -2479,12 +2479,12 @@ msgid "New Password"
 msgstr "New Password"
 
 #: components/app/interface/channels/text/Message.tsx
-msgid "New to Stoat"
-msgstr "New to Stoat"
+msgid "New to North Chat"
+msgstr "New to North Chat"
 
 #: components/auth/src/AuthPage.tsx
-msgid "New to Stoat?"
-msgstr "New to Stoat?"
+msgid "New to North Chat?"
+msgstr "New to North Chat?"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "New to the server"
@@ -2936,8 +2936,8 @@ msgid "Rename Session"
 msgstr "Rename Session"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Rep Stoat using Discord rich presence."
-msgstr "Rep Stoat using Discord rich presence."
+msgid "Rep North Chat using Discord rich presence."
+msgstr "Rep North Chat using Discord rich presence."
 
 #: components/app/menus/MessageContextMenu.tsx
 msgid "Reply"
@@ -3304,8 +3304,8 @@ msgid "Show send message button"
 msgstr "Show send message button"
 
 #: components/auth/src/flows/FlowLogin.tsx
-#~ msgid "Sign into Stoat"
-#~ msgstr "Sign into Stoat"
+#~ msgid "Sign into North Chat"
+#~ msgstr "Sign into North Chat"
 
 #: components/auth/src/flows/FlowHome.tsx
 #~ msgid "Sign Up"
@@ -3401,40 +3401,40 @@ msgid "Status"
 msgstr "Status"
 
 #: components/app/interface/settings/user/Native.tsx
-#~ msgid "Stoat Desktop"
-#~ msgstr "Stoat Desktop"
+#~ msgid "North Chat Desktop"
+#~ msgstr "North Chat Desktop"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Stoat Developer"
-msgstr "Stoat Developer"
+msgid "North Chat Developer"
+msgstr "North Chat Developer"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Stoat for Desktop"
-msgstr "Stoat for Desktop"
+msgid "North Chat for Desktop"
+msgstr "North Chat for Desktop"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Stoat Founder"
-msgstr "Stoat Founder"
+msgid "North Chat Founder"
+msgstr "North Chat Founder"
 
 #: components/auth/src/flows/FlowHome.tsx
-#~ msgid "Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
-#~ msgstr "Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
+#~ msgid "North Chat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
+#~ msgstr "North Chat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
 
 #: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
-msgid "Stoat rocks!"
-msgstr "Stoat rocks!"
+msgid "North Chat rocks!"
+msgstr "North Chat rocks!"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Stoat will start in the system tray."
-msgstr "Stoat will start in the system tray."
+msgid "North Chat will start in the system tray."
+msgstr "North Chat will start in the system tray."
 
 #: src/AndroidNag.tsx
-msgid "Stoat works best as an app"
-msgstr "Stoat works best as an app"
+msgid "North Chat works best as an app"
+msgstr "North Chat works best as an app"
 
 #: components/auth/src/AppUpsell.tsx
-msgid "Stoat, right on <0>your desktop.</0>"
-msgstr "Stoat, right on <0>your desktop.</0>"
+msgid "North Chat, right on <0>your desktop.</0>"
+msgstr "North Chat, right on <0>your desktop.</0>"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
 msgid "Stop camera"
@@ -3469,8 +3469,8 @@ msgid "Subscriptions"
 msgstr "Subscriptions"
 
 #: components/app/interface/settings/user/Feedback.tsx
-msgid "Suggest new Stoat features on GitHub discussions."
-msgstr "Suggest new Stoat features on GitHub discussions."
+msgid "Suggest new North Chat features on GitHub discussions."
+msgstr "Suggest new North Chat features on GitHub discussions."
 
 #: src/interface/Home.tsx
 msgid "Support the project by donating - thank you!"
@@ -3737,8 +3737,8 @@ msgstr "Unblock user"
 
 #. placeholder {0}: err.type
 #: components/i18n/errors.tsx
-msgid "Uncaught Stoat error: {0}"
-msgstr "Uncaught Stoat error: {0}"
+msgid "Uncaught North Chat error: {0}"
+msgstr "Uncaught North Chat error: {0}"
 
 #: components/app/interface/settings/user/notifications/Sounds.tsx
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
@@ -3979,8 +3979,8 @@ msgid "We are working hard on optimising our web app for mobile."
 msgstr "We are working hard on optimising our web app for mobile."
 
 #: components/auth/src/flows/FlowLogin.tsx
-msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check Stoat's status."
-msgstr "We couldn't finish logging you in. Try again, and if it keeps happening, check Stoat's status."
+msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check North Chat's status."
+msgstr "We couldn't finish logging you in. Try again, and if it keeps happening, check North Chat's status."
 
 #: components/auth/src/flows/FlowCreate.tsx
 msgid "We only use it to verify your account and help you get back in if you're ever locked out. We'll never sell it or send you spam."
@@ -4220,8 +4220,8 @@ msgid "You've been logged out"
 msgstr "You've been logged out"
 
 #: components/modal/modals/SignedOut.tsx
-msgid "You've been signed out of Stoat!"
-msgstr "You've been signed out of Stoat!"
+msgid "You've been signed out of North Chat!"
+msgstr "You've been signed out of North Chat!"
 
 #: components/i18n/errors.tsx
 msgid "You've reached your personal bot limit."

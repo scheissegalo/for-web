@@ -374,7 +374,7 @@ class Lifecycle {
 
   private onState = (state: ConnectionState) => {
     if (state === ConnectionState.Disconnected) {
-      //Stoat error
+      //North Chat error
       if (this.client.events.lastError?.type === "revolt")
         return this.showError(this.client.events.lastError.data);
 
@@ -426,7 +426,7 @@ export default class ClientController {
   #waitState?: Promise<void>;
   #swapping = false;
 
-  /** Stoat instance the client belongs to. Also accessible via `useInstance()` */
+  /** North Chat instance the client belongs to. Also accessible via `useInstance()` */
   readonly instance: Instance;
 
   /**
@@ -539,9 +539,9 @@ export default class ClientController {
         os = "iPadOS";
       }
 
-      friendly_name = `Stoat for Web (${name} on ${os})`;
+      friendly_name = `North Chat for Web (${name} on ${os})`;
     } else {
-      friendly_name = "Stoat for Web (Unknown Device)";
+      friendly_name = "North Chat for Web (Unknown Device)";
     }
 
     // Try to login with given credentials

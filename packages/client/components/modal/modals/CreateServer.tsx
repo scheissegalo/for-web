@@ -61,7 +61,7 @@ export function CreateServerModal(
             <Trans>
               By creating this server, you agree to the{" "}
               <a
-                href="https://stoat.chat/legal/community-guidelines"
+                href="https://north-industries.com/legal/community-guidelines"
                 target="_blank"
                 rel="noreferrer"
                 style={{

@@ -7,20 +7,20 @@ import Instance from "@revolt/instance/Instance";
 import { Button, CircularProgress, Symbol, Text } from "@revolt/ui";
 
 /**
- * Stoat status page URL
+ * North Chat status page URL
  */
-const STATUS_PAGE_URL = "https://status.stoat.chat";
+const STATUS_PAGE_URL = "https://north-industries.com/status";
 
 /**
  * Connection troubleshooting knowledge base article
  */
 const TROUBLESHOOTING_URL =
-  "https://support.stoat.chat/kb/troubleshooting/connection-issues";
+  "https://north-industries.com/support/kb/troubleshooting/connection-issues";
 
 /**
  * Status API queried when the client is slow to connect
  */
-const STATUS_API_URL = "https://stoat.chat/-/status";
+const STATUS_API_URL = "https://north-industries.com/-/status";
 
 /**
  * How long to wait for a proper connection before asking the status API
@@ -91,7 +91,7 @@ export function LoadingScreen(props: { isStoat?: boolean }) {
 
     // Check the status API for an ongoing incident.
     const statusTimer = setTimeout(async () => {
-      //TODO Fetch status from current instance backend instead of only stoat.chat
+      //TODO Fetch status from the current instance backend instead of only the official instance
       if (!props.isStoat && !instance?.isStoat) return;
       try {
         const res = await fetch(STATUS_API_URL, { signal: controller.signal });

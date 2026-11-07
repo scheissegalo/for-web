@@ -11,12 +11,16 @@ import {
 import { Dynamic } from "solid-js/web";
 
 import { CONFIGURATION } from "@revolt/common";
-import { AppConfig, normalizeHost, STOAT_HOST } from "@revolt/common/lib/env";
+import {
+  AppConfig,
+  normalizeHost,
+  NORTH_CHAT_HOST,
+} from "@revolt/common/lib/env";
 import { LoadingScreen, useSnackbar } from "@revolt/ui";
 
 import Instance, { _newClient } from "./Instance";
 
-export const StoatOrigin = new URL(`https://${STOAT_HOST}`).origin;
+export const NorthChatOrigin = new URL(`https://${NORTH_CHAT_HOST}`).origin;
 export const DefaultURL = new URL(`https://${CONFIGURATION.DEFAULT_HOST}`);
 export const DefaultHost = DefaultURL.host;
 const DefRoute = `/i/${DefaultHost}/`;
@@ -32,13 +36,13 @@ export function InstanceContext(props: { children?: JSXElement }) {
 
   const [inst, setInst] = createSignal<Instance>();
 
-  //Check Stoat instance
+  //Check North Chat instance
   const host = normalizeHost(params.host);
 
   function onError(e: unknown) {
     if ((e as Error).message === "Failed to fetch") {
       const hStr = `'${host || DefaultHost}'`;
-      e = t`Couldn't fetch Stoat configuration from ${hStr}.`;
+      e = t`Couldn't fetch North Chat configuration from ${hStr}.`;
     }
     snackbar.showError(e);
     if (appLoadedOnce) nav(-1);
@@ -75,7 +79,7 @@ export function InstanceContext(props: { children?: JSXElement }) {
     <Show
       when={instInit()}
       fallback={
-        <LoadingScreen isStoat={(host || DefaultHost) === STOAT_HOST} />
+        <LoadingScreen isStoat={false} />
       }
     >
       <Dynamic component={instanceContext.Provider} value={instInit()}>

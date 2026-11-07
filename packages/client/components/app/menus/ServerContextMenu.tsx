@@ -116,7 +116,7 @@ export function ServerContextMenu(props: { server: Server }) {
   }
 
   /**
-   * Open server in Stoat Admin Panel
+   * Open server in North Chat Admin Panel
    */
   function openAdminPanel() {
     window.open(

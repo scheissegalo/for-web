@@ -93,7 +93,7 @@ function RoleColourPicker(props: {
                     </ColouredText>
                   </PreviewUsername>
                   <PreviewBody>
-                    <Trans>Stoat rocks!</Trans>
+                    <Trans>North Chat rocks!</Trans>
                   </PreviewBody>
                 </PreviewMessageContent>
               </PreviewMessage>

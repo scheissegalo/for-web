@@ -35,11 +35,8 @@ export function AgeGate(props: {
   const geoQuery = useQuery(() => ({
     queryKey: ["geoblock"],
     queryFn: async (): Promise<GeoBlock> => {
-      const response = await fetch("https://geo.revolt.chat");
-      if (!response.ok) {
-        throw new Error("Failed to fetch geo data");
-      }
-      return response.json();
+      // Geo-blocking is not enabled on this instance yet.
+      return { countryCode: "", isAgeRestrictedGeo: false };
     },
     staleTime: 5 * 60 * 1000, // 5 minutes
     throwOnError: true,

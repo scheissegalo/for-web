@@ -66,7 +66,7 @@ interface SettingsDefinition {
   "appearance:compact_mode": boolean;
 
   /**
-   * Indicate new users to Stoat
+   * Indicate new users to North Chat
    * TODO: implement
    */
   // "appearance:show_account_age": boolean;

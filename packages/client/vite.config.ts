@@ -60,16 +60,16 @@ export default defineConfig({
         type: "module",
       },
       manifest: {
-        name: "Stoat",
-        short_name: "Stoat",
-        description: "User-first open source chat platform.",
+        name: "North Chat",
+        short_name: "North Chat",
+        description: "North Chat — a self-hosted community chat platform.",
         categories: ["communication", "chat", "messaging"],
         start_url: base,
         scope: pwaScope,
         display_override: ["window-controls-overlay"],
         display: "standalone",
-        background_color: "#101823",
-        theme_color: "#101823",
+        background_color: "#0d284f",
+        theme_color: "#0d284f",
         icons: [
           {
             src: `${base}assets/web/android-chrome-192x192.png`,

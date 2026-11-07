@@ -823,8 +823,8 @@ msgstr "تحقق من بريدك الإلكتروني"
 #~ msgstr "راجع بريدك الإلكتروني!"
 
 #: components/auth/src/flows/FlowConfirmReset.tsx
-msgid "Choose a new password for your Stoat account."
-msgstr "اختر كلمة مرور جديدة لحساب Stoat الخاص بك."
+msgid "Choose a new password for your North Chat account."
+msgstr "اختر كلمة مرور جديدة لحساب North Chat الخاص بك."
 
 #: components/auth/src/flows/FlowLogin.tsx
 msgid "Choose a username"
@@ -1059,8 +1059,8 @@ msgid "Could not find what you requested."
 msgstr "لم يتم العثور على طلبك."
 
 #: components/instance/index.tsx
-msgid "Couldn't fetch Stoat configuration from {hStr}."
-msgstr "تعذر جلب إعدادات Stoat من {hStr}."
+msgid "Couldn't fetch North Chat configuration from {hStr}."
+msgstr "تعذر جلب إعدادات North Chat من {hStr}."
 
 #: components/ui/components/design/ImageCropper.tsx
 msgid "Couldn't load this image."
@@ -1408,7 +1408,7 @@ msgid "Discover"
 msgstr "اكتشف"
 
 #: src/interface/Home.tsx
-msgid "Discover Stoat"
+msgid "Discover North Chat"
 msgstr "قم بإكتشاف ستوت"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
@@ -1455,11 +1455,11 @@ msgid "Donate"
 msgstr "تبرع"
 
 #: src/interface/Home.tsx
-msgid "Donate to Stoat"
+msgid "Donate to North Chat"
 msgstr "قم بالتبرع لستوت"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Donated to Stoat"
+msgid "Donated to North Chat"
 msgstr "قمت بالتبرع لستوت"
 
 #: components/modal/modals/MFARecovery.tsx
@@ -1659,8 +1659,8 @@ msgid "Extreme violence, gore or animal cruelty"
 msgstr "عنف مفرط، مشاهد دموية أو قسوة على الحيوانات"
 
 #: components/client/NotificationsController.ts
-msgid "Failed to enable notifications. Stoat does not have notification permission."
-msgstr "فشل في تمكين الإشعارات. لا يوجد لدى Stoat إذن الإخطار."
+msgid "Failed to enable notifications. North Chat does not have notification permission."
+msgstr "فشل في تمكين الإشعارات. لا يوجد لدى North Chat إذن الإخطار."
 
 #: components/client/NotificationsController.ts
 msgid "Failed to enable push notifications. Please try again later."
@@ -1778,24 +1778,24 @@ msgid "Get it on Google Play"
 msgstr "احصل عليه على Google Play"
 
 #: components/auth/src/AppUpsell.tsx
-msgid "Get Stoat for Android and keep up with your friends wherever you are."
-msgstr "احصل على Stoat لنظام أندرويد وابقَ على تواصل مع أصدقائك أينما كنت."
+msgid "Get North Chat for Android and keep up with your friends wherever you are."
+msgstr "احصل على North Chat لنظام أندرويد وابقَ على تواصل مع أصدقائك أينما كنت."
 
 #: components/auth/src/AppUpsell.tsx
 msgid "Get the desktop app for Windows, macOS and Linux and keep your conversations one click away."
 msgstr "احصل على تطبيق سطح المكتب لأنظمة Windows وmacOS وLinux، واجعل محادثاتك على بُعد نقرة واحدة."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
-msgid "Gifbox is our own GIF service, so you can keep sharing GIFs right here on Stoat."
-msgstr "Gifbox هي خدمة GIF الخاصة بنا، لذا يمكنك الاستمرار في مشاركة صور GIF هنا على Stoat."
+msgid "Gifbox is our own GIF service, so you can keep sharing GIFs right here on North Chat."
+msgstr "Gifbox هي خدمة GIF الخاصة بنا، لذا يمكنك الاستمرار في مشاركة صور GIF هنا على North Chat."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "GIFs are now powered by Gifbox"
 msgstr "أصبحت صور GIF الآن مدعومة بواسطة Gifbox"
 
 #: src/interface/Home.tsx
-msgid "Give feedback on Stoat"
-msgstr "عبر عن رأيك في Stoat"
+msgid "Give feedback on North Chat"
+msgstr "عبر عن رأيك في North Chat"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Give us some detail"
@@ -1819,8 +1819,8 @@ msgstr "إذهب إلى إعدادات الحساب لتعديل إسم المس
 
 #: components/app/interface/settings/user/Feedback.tsx
 #: src/interface/Home.tsx
-msgid "Go to the Stoat Lounge"
-msgstr "إذهب إلى Stoat Lounge"
+msgid "Go to the North Chat Lounge"
+msgstr "إذهب إلى North Chat Lounge"
 
 #~ msgid "Go to the testers server"
 #~ msgstr "الذهاب لسيرفر المختبرين"
@@ -1875,8 +1875,8 @@ msgid "Help contribute to an existing or new language"
 msgstr "ساهم في ترجمة لغة جديدة أو لغة موجودة"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Helped translate Stoat"
-msgstr "قام بالمساعدة في ترجمة Stoat"
+msgid "Helped translate North Chat"
+msgstr "قام بالمساعدة في ترجمة North Chat"
 
 #. placeholder {0}: link()
 #: components/modal/modals/CreateInvite.tsx
@@ -1932,16 +1932,16 @@ msgid "Impersonation"
 msgstr "إنتحال شخصية"
 
 #: src/AndroidNag.tsx
-msgid "In the meantime, install Stoat from Google Play for a faster, smoother experience designed for Android."
-msgstr "في هذه الأثناء، قم بتثبيت Stoat من Google Play للحصول على تجربة أسرع وأكثر سلاسة مصممة لنظام Android."
+msgid "In the meantime, install North Chat from Google Play for a faster, smoother experience designed for Android."
+msgstr "في هذه الأثناء، قم بتثبيت North Chat من Google Play للحصول على تجربة أسرع وأكثر سلاسة مصممة لنظام Android."
 
 #: components/app/interface/settings/user/voice/VoiceInputOptions.tsx
 msgid "Input Volume"
 msgstr "مستوى صوت الإدخال"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Instead of closing, Stoat will hide in your tray."
-msgstr "عوضا عن الإغلاق، Stoat ستكون في أسفل خانة البرامج."
+msgid "Instead of closing, North Chat will hide in your tray."
+msgstr "عوضا عن الإغلاق، North Chat ستكون في أسفل خانة البرامج."
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Interface Font"
@@ -2005,13 +2005,13 @@ msgstr "انضم الى سيرفر"
 #~ msgstr ""
 
 #: components/auth/src/flows/FlowCreate.tsx
-msgid "Join Stoat"
-msgstr "انضم إلى Stoat"
+msgid "Join North Chat"
+msgstr "انضم إلى North Chat"
 
 #: components/app/interface/settings/user/Feedback.tsx
 #: src/interface/Home.tsx
-msgid "Join the Stoat Lounge"
-msgstr "انضم الى Stoat Lounge"
+msgid "Join the North Chat Lounge"
+msgstr "انضم الى North Chat Lounge"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
@@ -2069,16 +2069,16 @@ msgid "Latest"
 msgstr "الأحدث"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Launch Stoat when you log into your computer."
-msgstr "تشغيل Stoat عند تشغيل الجهاز الخاص بك."
+msgid "Launch North Chat when you log into your computer."
+msgstr "تشغيل North Chat عند تشغيل الجهاز الخاص بك."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "Learn more"
 msgstr "تعرف على المزيد"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Learn more about how to create bots on Stoat."
-msgstr "اعرف المزيد عن كيفية إنشاء البوتات على Stoat."
+msgid "Learn more about how to create bots on North Chat."
+msgstr "اعرف المزيد عن كيفية إنشاء البوتات على North Chat."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -2101,8 +2101,8 @@ msgid "Leave server"
 msgstr "مغادرة السيرفر"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Let Stoat use its own custom titlebar."
-msgstr "اسمح لـ Stoat باستخدام شريط العنوان الخاص به."
+msgid "Let North Chat use its own custom titlebar."
+msgstr "اسمح لـ North Chat باستخدام شريط العنوان الخاص به."
 
 #: src/interface/Home.tsx
 msgid "Let us know how we can improve our app by giving us feedback."
@@ -2434,12 +2434,12 @@ msgid "New Password"
 msgstr "كلمة مرور جديدة"
 
 #: components/app/interface/channels/text/Message.tsx
-msgid "New to Stoat"
-msgstr "جديد على Stoat"
+msgid "New to North Chat"
+msgstr "جديد على North Chat"
 
 #: components/auth/src/AuthPage.tsx
-msgid "New to Stoat?"
-msgstr "هل أنت جديد في Stoat؟"
+msgid "New to North Chat?"
+msgstr "هل أنت جديد في North Chat؟"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "New to the server"
@@ -2888,8 +2888,8 @@ msgid "Rename Session"
 msgstr "اعادة تسمية الجلسة"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Rep Stoat using Discord rich presence."
-msgstr "عرض Stoat في الحالة الشخصية في تطبيق Discord."
+msgid "Rep North Chat using Discord rich presence."
+msgstr "عرض North Chat في الحالة الشخصية في تطبيق Discord."
 
 #: components/app/menus/MessageContextMenu.tsx
 msgid "Reply"
@@ -3253,8 +3253,8 @@ msgstr "إظهار الآخرين"
 msgid "Show send message button"
 msgstr "عرض زر إرسال الرسالة"
 
-#~ msgid "Sign into Stoat"
-#~ msgstr "تسجيل دخول الى Stoat"
+#~ msgid "Sign into North Chat"
+#~ msgstr "تسجيل دخول الى North Chat"
 
 #~ msgid "Sign Up"
 #~ msgstr "انشاء حساب"
@@ -3347,39 +3347,39 @@ msgstr "بدء التطبيق عند التشغيل"
 msgid "Status"
 msgstr "الحالة"
 
-#~ msgid "Stoat Desktop"
+#~ msgid "North Chat Desktop"
 #~ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Stoat Developer"
-msgstr "مطور Stoat"
+msgid "North Chat Developer"
+msgstr "مطور North Chat"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Stoat for Desktop"
-msgstr "نسخة Stoat للحاسوب"
+msgid "North Chat for Desktop"
+msgstr "نسخة North Chat للحاسوب"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Stoat Founder"
-msgstr "مؤسس Stoat"
+msgid "North Chat Founder"
+msgstr "مؤسس North Chat"
 
-#~ msgid "Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
-#~ msgstr "Stoat هو واحد من الطرق المفضلة للبقاء على تواصل مع أصدقائك و مجتمعك، أين ما كنت، حين ما شئت."
+#~ msgid "North Chat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
+#~ msgstr "North Chat هو واحد من الطرق المفضلة للبقاء على تواصل مع أصدقائك و مجتمعك، أين ما كنت، حين ما شئت."
 
 #: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
-msgid "Stoat rocks!"
+msgid "North Chat rocks!"
 msgstr "حيوان القاقم رائع!"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Stoat will start in the system tray."
-msgstr "سيبدأ Stoat في علبة النظام."
+msgid "North Chat will start in the system tray."
+msgstr "سيبدأ North Chat في علبة النظام."
 
 #: src/AndroidNag.tsx
-msgid "Stoat works best as an app"
-msgstr "يعمل Stoat بشكل أفضل كتطبيق"
+msgid "North Chat works best as an app"
+msgstr "يعمل North Chat بشكل أفضل كتطبيق"
 
 #: components/auth/src/AppUpsell.tsx
-msgid "Stoat, right on <0>your desktop.</0>"
-msgstr "Stoat، مباشرةً على <0>سطح مكتبك.</0>"
+msgid "North Chat, right on <0>your desktop.</0>"
+msgstr "North Chat، مباشرةً على <0>سطح مكتبك.</0>"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
 msgid "Stop camera"
@@ -3414,8 +3414,8 @@ msgid "Subscriptions"
 msgstr "الإشتراكات"
 
 #: components/app/interface/settings/user/Feedback.tsx
-msgid "Suggest new Stoat features on GitHub discussions."
-msgstr "اقترح ميزات جديدة لـ Stoat في منتديات GitHub."
+msgid "Suggest new North Chat features on GitHub discussions."
+msgstr "اقترح ميزات جديدة لـ North Chat في منتديات GitHub."
 
 #: src/interface/Home.tsx
 msgid "Support the project by donating - thank you!"
@@ -3681,7 +3681,7 @@ msgstr "فك الحظر"
 
 #. placeholder {0}: err.type
 #: components/i18n/errors.tsx
-msgid "Uncaught Stoat error: {0}"
+msgid "Uncaught North Chat error: {0}"
 msgstr "خطأ Staot غير مراقب: {0}"
 
 #: components/app/interface/settings/user/notifications/Sounds.tsx
@@ -3920,8 +3920,8 @@ msgid "We are working hard on optimising our web app for mobile."
 msgstr "نحن نعمل بجد على تحسين تطبيق الويب الخاص بنا للهواتف المحمولة."
 
 #: components/auth/src/flows/FlowLogin.tsx
-msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check Stoat's status."
-msgstr "تعذّر إكمال عملية تسجيل الدخول. حاول مرة أخرى، وإذا استمرت المشكلة، فتحقق من حالة Stoat."
+msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check North Chat's status."
+msgstr "تعذّر إكمال عملية تسجيل الدخول. حاول مرة أخرى، وإذا استمرت المشكلة، فتحقق من حالة North Chat."
 
 #: components/auth/src/flows/FlowCreate.tsx
 msgid "We only use it to verify your account and help you get back in if you're ever locked out. We'll never sell it or send you spam."
@@ -4154,8 +4154,8 @@ msgid "You've been logged out"
 msgstr "تم تسجيل خروجك"
 
 #: components/modal/modals/SignedOut.tsx
-msgid "You've been signed out of Stoat!"
-msgstr "لقد قمت بمغادرة حساب Stoat الخاص بك!"
+msgid "You've been signed out of North Chat!"
+msgstr "لقد قمت بمغادرة حساب North Chat الخاص بك!"
 
 #: components/i18n/errors.tsx
 msgid "You've reached your personal bot limit."

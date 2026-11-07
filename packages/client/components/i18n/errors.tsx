@@ -36,7 +36,7 @@ export function useError() {
 
     // TODO: HTTP errors
 
-    // handle Revolt API errors
+    // handle North Chat API errors
     if (typeof (error as { type: never })?.type === "string") {
       const err = error as KnownError;
 
@@ -198,7 +198,7 @@ export function useError() {
           return err.type + " " + err.location;
 
         default:
-          return t`Uncaught Stoat error: ${err.type}`;
+          return t`Uncaught North Chat error: ${err.type}`;
       }
     }
 
@@ -251,7 +251,7 @@ export function TranslatedError(props: TranslatedErrorProps) {
             <Trans>
               This sign up is marked as spam. Please see{" "}
               <a
-                href="https://support.stoat.chat/kb/safety/blocked-for-spam"
+                href="https://north-industries.com/support/kb/safety/blocked-for-spam"
                 target="_blank"
                 rel="noreferrer"
               >

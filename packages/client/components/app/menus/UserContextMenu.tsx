@@ -205,7 +205,7 @@ export function UserContextMenu(props: {
   }
 
   /**
-   * Open user in Stoat Admin Panel
+   * Open user in North Chat Admin Panel
    */
   function openAdminPanel() {
     window.open(
