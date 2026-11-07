@@ -124,6 +124,11 @@ msgstr "{0} ha abbandonato"
 msgid "{0} made {1} the new group owner"
 msgstr "{0} ha reso {1} il nuovo proprietario del gruppo"
 
+#. placeholder {0}: onlineMembers()
+#: src/interface/channels/text/MemberSidebar.tsx
+msgid "{0} members online"
+msgstr ""
+
 #. placeholder {0}: name(id)
 #. placeholder {1}: to + 1
 #. placeholder {2}: list.length
@@ -376,6 +381,18 @@ msgstr "Aggiungi"
 msgid "Add a new friend"
 msgstr "Aggiungi amico"
 
+#: components/app/interface/settings/user/Account.tsx
+msgid "Add a recovery email and password"
+msgstr ""
+
+#: components/app/interface/settings/user/Account.tsx
+msgid "Add an account"
+msgstr ""
+
+#: components/app/interface/settings/user/Account.tsx
+msgid "Add an additional account login for fast-switching"
+msgstr ""
+
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr "Aggiungi Bot"
@@ -514,6 +531,11 @@ msgstr "Sei sicuro di voler fissare questo messaggio?"
 msgid "Are you sure you want to remove {0} from {1}?"
 msgstr "Sei sicuro di voler rimuovere {0} da {1}?"
 
+#. placeholder {0}: props.user?.username
+#: components/modal/modals/TransferGroup.tsx
+msgid "Are you sure you want to transfer ownership to <0>{0}</0>?"
+msgstr ""
+
 #: components/modal/modals/PinMessage.tsx
 msgid "Are you sure you want to unpin this message?"
 msgstr "Sei sicuro di voler rimuovere questo messaggio dai fissati?"
@@ -635,12 +657,20 @@ msgid "Busy"
 msgstr "Occupato"
 
 #: components/modal/modals/CreateBot.tsx
-msgid "By creating this bot, you agree to the <0>Acceptable Use Policy</0>."
-msgstr "Creando questo bot, accetti le <0>Condizioni d'uso accettabile</0>."
+#~ msgid "By creating this bot, you agree to the <0>Acceptable Use Policy</0>."
+#~ msgstr "Creando questo bot, accetti le <0>Condizioni d'uso accettabile</0>."
+
+#: components/modal/modals/CreateBot.tsx
+msgid "By creating this bot, you agree to the <0>Community Guidelines</0>."
+msgstr ""
 
 #: components/modal/modals/CreateServer.tsx
-msgid "By creating this server, you agree to the <0>Acceptable Use Policy</0>."
-msgstr "Creando questo server, accetti le <0>Condizioni d'uso accettabile</0>."
+#~ msgid "By creating this server, you agree to the <0>Acceptable Use Policy</0>."
+#~ msgstr "Creando questo server, accetti le <0>Condizioni d'uso accettabile</0>."
+
+#: components/modal/modals/CreateServer.tsx
+msgid "By creating this server, you agree to the <0>Community Guidelines</0>."
+msgstr ""
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Bypass Slowmode"
@@ -690,6 +720,7 @@ msgstr "Al momento non è possibile ottenere lo stato della richiesta dalla sezi
 #: components/modal/modals/ServerIdentity.tsx
 #: components/modal/modals/SignOutSessions.tsx
 #: components/modal/modals/TimeoutMember.tsx
+#: components/modal/modals/TransferGroup.tsx
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -844,6 +875,10 @@ msgstr "Scegli una nuova password per il tuo account di North Chat."
 msgid "Choose a username"
 msgstr "Scegli un nome utente"
 
+#: components/modal/modals/SwapUser.tsx
+msgid "Choose an account"
+msgstr ""
+
 #: components/modal/modals/Onboarding.tsx
 msgid "Choose username"
 msgstr "Scegli il tuo nome utente"
@@ -895,6 +930,8 @@ msgstr "Impostazioni del client"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
+#: components/modal/modals/SwapUser.tsx
+#: components/modal/modals/Ts3Credentials.tsx
 #: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
@@ -913,6 +950,11 @@ msgstr "Chiudere la chat con {0}?"
 #: components/modal/modals/JoinServer.tsx
 msgid "Code"
 msgstr "Codice"
+
+#. placeholder {0}: nickname()
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Code sent to {0} in TeamSpeak as a private message. It expires in a few minutes."
+msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardActiveRoom.tsx
 #, fuzzy
@@ -933,6 +975,7 @@ msgstr "Configura l'autenticazione con codice monouso"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
+#: components/modal/modals/TransferGroup.tsx
 msgid "Confirm"
 msgstr "Conferma"
 
@@ -1126,7 +1169,6 @@ msgstr "Crea un nuovo gruppo"
 msgid "Create a webhook"
 msgstr "Crea un webhook"
 
-#: components/auth/src/AuthPage.tsx
 #: components/auth/src/flows/FlowCreate.tsx
 #, fuzzy
 msgid "Create account"
@@ -1395,6 +1437,10 @@ msgstr "Cancella ruolo"
 msgid "Delete Server"
 msgstr "Elimina Server"
 
+#: components/auth/src/flows/FlowLogin.tsx
+msgid "Delete session"
+msgstr ""
+
 #: components/modal/modals/DeleteEmoji.tsx
 #, fuzzy
 msgid "Deleting this emoji will disallow future use. All past uses will remain."
@@ -1582,8 +1628,13 @@ msgstr "In vigore dal <0/> (<1/>)"
 #: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
+#: components/modal/modals/Ts3Credentials.tsx
 msgid "Email"
 msgstr "Email"
+
+#: components/modal/modals/Ts3Credentials.tsx
+msgid "Email and password set. You can now use them to log in."
+msgstr ""
 
 #: components/app/interface/settings/server/emojis/EmojiList.tsx
 #, fuzzy
@@ -1623,6 +1674,10 @@ msgstr "Attiva Notifiche Push"
 msgid "Enable transparency glass/blur effects (slow on older machines)"
 msgstr "Attiva effetti di trasparenza/sfocatura (potrebbe rallentare i vecchi dispositivi)"
 
+#: components/i18n/errors.tsx
+msgid "Encountered a problem while saving previous session."
+msgstr ""
+
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
 msgid "End call"
 msgstr "Termina la chiamata"
@@ -1641,6 +1696,7 @@ msgstr "Inserisci un nuovo nome per questa sessione"
 
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditPassword.tsx
+#: components/modal/modals/Ts3Credentials.tsx
 msgid "Enter a new password."
 msgstr "Inserire una nuova password."
 
@@ -1977,6 +2033,10 @@ msgstr "Sostituzione di persona"
 msgid "In the meantime, install North Chat from Google Play for a faster, smoother experience designed for Android."
 msgstr "Nel frattempo, installa North Chat su Google Play per un'esperienza più veloce e fluida pensata per Android."
 
+#: src/interface/Friends.tsx
+msgid "Incoming"
+msgstr ""
+
 #: components/app/interface/settings/user/voice/VoiceInputOptions.tsx
 msgid "Input Volume"
 msgstr "Volume di ingresso"
@@ -2034,6 +2094,7 @@ msgstr "premio battuta fuori luogo 2"
 msgid "ISO Standard (YYYY-MM-DD)"
 msgstr "ISO Standard (YYYY-MM-DD)"
 
+#: components/auth/src/AuthPage.tsx
 #: components/modal/modals/Invite.tsx
 #: components/modal/modals/JoinServer.tsx
 msgid "Join"
@@ -2057,6 +2118,11 @@ msgstr "Unisciti al North Chat Lounge"
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr "Entra nel canale vocale"
+
+#: components/auth/src/flows/FlowLogin.tsx
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Join with TeamSpeak"
+msgstr ""
 
 #: components/ui/components/features/messaging/elements/Invite.tsx
 #: components/ui/components/features/profiles/ProfileJoined.tsx
@@ -2173,8 +2239,8 @@ msgstr "Accedi"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #, fuzzy
-msgid "Log in again"
-msgstr "Accedi di nuovo"
+#~ msgid "Log in again"
+#~ msgstr "Accedi di nuovo"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #, fuzzy
@@ -2205,6 +2271,10 @@ msgstr "Accesso in corso…"
 #: components/app/interface/settings/user/Sessions.tsx
 msgid "Logs you out of all sessions except this device."
 msgstr "Ti disconnette da tutte le sessioni, eccetto questo dispositivo."
+
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Looking for your TeamSpeak client…"
+msgstr ""
 
 #: components/app/interface/settings/server/emojis/EmojiList.tsx
 msgid "Lowercase letters, numbers and underscores only."
@@ -2476,6 +2546,7 @@ msgstr "Nuovo nome"
 
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditPassword.tsx
+#: components/modal/modals/Ts3Credentials.tsx
 msgid "New Password"
 msgstr "Nuova Password"
 
@@ -2525,6 +2596,38 @@ msgstr "Nessuna"
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Normal"
 msgstr "Normale"
+
+#: components/ui/components/features/profiles/ProfileBadges.tsx
+msgid "North Chat Developer"
+msgstr "Sviluppatore di North Chat"
+
+#: components/app/interface/settings/user/Native.tsx
+msgid "North Chat for Desktop"
+msgstr "North Chat per Desktop"
+
+#: components/ui/components/features/profiles/ProfileBadges.tsx
+msgid "North Chat Founder"
+msgstr "Creatore di North Chat"
+
+#~ msgid "North Chat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
+#~ msgstr "North Chat è uno dei migliori modi per restare in contatto con i tuoi amici e la tua community, ovunque ed in qualsiasi momento."
+
+#: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
+msgid "North Chat rocks!"
+msgstr "North Chat è fantastico!"
+
+#: components/app/interface/settings/user/Native.tsx
+msgid "North Chat will start in the system tray."
+msgstr "North Chat si avvierà ridotto a icona."
+
+#: src/AndroidNag.tsx
+msgid "North Chat works best as an app"
+msgstr "North Chat funziona meglio come app"
+
+#: components/auth/src/AppUpsell.tsx
+#, fuzzy
+msgid "North Chat, right on <0>your desktop.</0>"
+msgstr "North Chat, proprio sul <0>tuo desktop.</0>"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Not of minimum age to use the platform"
@@ -2597,8 +2700,8 @@ msgid "Only mentions will notify you"
 msgstr "Riceverai notifiche solo per le menzioni"
 
 #: components/instance/index.tsx
-msgid "Oops, something went wrong! {e}"
-msgstr "Oops, qualcosa è andato storto! {e}"
+#~ msgid "Oops, something went wrong! {e}"
+#~ msgstr "Oops, qualcosa è andato storto! {e}"
 
 #: components/modal/modals/Invite.tsx
 msgid "Open"
@@ -2628,6 +2731,10 @@ msgstr "Apri le impostazioni"
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
 msgstr "Altro"
+
+#: src/interface/Friends.tsx
+msgid "Outgoing"
+msgstr ""
 
 #: components/app/interface/settings/user/voice/VoiceInputOptions.tsx
 msgid "Output Volume"
@@ -2710,8 +2817,8 @@ msgid "Please enter your email."
 msgstr "Inserisci il tuo indirizzo email."
 
 #: components/i18n/errors.tsx
-msgid "Please log in again."
-msgstr "Per favore effettua di nuovo l'accesso."
+#~ msgid "Please log in again."
+#~ msgstr "Per favore effettua di nuovo l'accesso."
 
 #: components/modal/modals/MFARecovery.tsx
 msgid "Please save these to a safe location."
@@ -3017,6 +3124,10 @@ msgstr "Problemi di sicurezza comunicati responsabilmente"
 msgid "Restore call window"
 msgstr "Ripristina la finestra di chiamata"
 
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Retry"
+msgstr ""
+
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Retry sending"
 msgstr "Riprova l'invio"
@@ -3068,6 +3179,7 @@ msgstr "Ruoli senza eccezioni"
 #: components/modal/modals/CustomStatus.tsx
 #: components/modal/modals/EditServerFolder.tsx
 #: components/modal/modals/ServerIdentity.tsx
+#: components/modal/modals/Ts3Credentials.tsx
 msgid "Save"
 msgstr "Salva"
 
@@ -3183,6 +3295,10 @@ msgstr "Inviare messaggi nei canali"
 msgid "Send Request"
 msgstr "Invia richiesta"
 
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Sending the code…"
+msgstr ""
+
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
 msgstr "Invio in corso..."
@@ -3250,6 +3366,11 @@ msgstr "Sessioni"
 #, fuzzy
 msgid "Set colour to {colour}"
 msgstr "Imposta il colore su {colour}"
+
+#: components/app/interface/settings/user/Account.tsx
+#: components/modal/modals/Ts3Credentials.tsx
+msgid "Set email and password"
+msgstr ""
 
 #: components/modal/modals/EditServerFolder.tsx
 #, fuzzy
@@ -3333,6 +3454,7 @@ msgid "Slowmode off"
 msgstr "Slowmode disattivata"
 
 #: components/modal/modals/EditEmail.tsx
+#: components/modal/modals/Ts3Credentials.tsx
 msgid "someone@example.com"
 msgstr "qualcuno@esempio.com"
 
@@ -3394,6 +3516,10 @@ msgstr "Attiva videocamera"
 msgid "Start Minimised to Tray"
 msgstr "Avvia ridotto a icona"
 
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Start over"
+msgstr ""
+
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 msgid "Start the call"
 msgstr "Inizia la chiamata"
@@ -3405,38 +3531,6 @@ msgstr "Esegui all'avvio"
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 msgid "Status"
 msgstr "Stato"
-
-#: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "North Chat Developer"
-msgstr "Sviluppatore di North Chat"
-
-#: components/app/interface/settings/user/Native.tsx
-msgid "North Chat for Desktop"
-msgstr "North Chat per Desktop"
-
-#: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "North Chat Founder"
-msgstr "Creatore di North Chat"
-
-#~ msgid "North Chat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
-#~ msgstr "North Chat è uno dei migliori modi per restare in contatto con i tuoi amici e la tua community, ovunque ed in qualsiasi momento."
-
-#: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
-msgid "North Chat rocks!"
-msgstr "North Chat è fantastico!"
-
-#: components/app/interface/settings/user/Native.tsx
-msgid "North Chat will start in the system tray."
-msgstr "North Chat si avvierà ridotto a icona."
-
-#: src/AndroidNag.tsx
-msgid "North Chat works best as an app"
-msgstr "North Chat funziona meglio come app"
-
-#: components/auth/src/AppUpsell.tsx
-#, fuzzy
-msgid "North Chat, right on <0>your desktop.</0>"
-msgstr "North Chat, proprio sul <0>tuo desktop.</0>"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
 msgid "Stop camera"
@@ -3477,6 +3571,10 @@ msgstr "Suggerisci nuove funzionalità per North Chat nelle discussioni di GitHu
 #: src/interface/Home.tsx
 msgid "Support the project by donating - thank you!"
 msgstr "Sostieni il progetto donando - grazie!"
+
+#: src/interface/navigation/servers/UserMenu.tsx
+msgid "Switch Accounts"
+msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 msgid "Switch to this voice channel"
@@ -3539,6 +3637,10 @@ msgstr "Canale testuale"
 msgid "That action had no effect."
 msgstr "Nessuna modifica apportata."
 
+#: components/modal/modals/Ts3Credentials.tsx
+msgid "That email address is not allowed. Use a different one."
+msgstr ""
+
 #: components/i18n/errors.tsx
 msgid "The bot has been removed from discover by moderators, the user must contact support."
 msgstr ""
@@ -3578,6 +3680,10 @@ msgstr "Il server è stato rimosso dalla sezione \"Esplora\" dai moderatori; l'u
 msgid "The server is already on discover, the user must contact support to have it removed."
 msgstr ""
 
+#: components/i18n/errors.tsx
+msgid "The web socket was unable to connect to the backend."
+msgstr ""
+
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Theme"
 msgstr "Tema"
@@ -3585,6 +3691,10 @@ msgstr "Tema"
 #. placeholder {0}: props.discoverable instanceof Bot ? "bot" : "server"
 #: components/app/interface/settings/shared/Discoverable.tsx
 msgid "This {0} is discoverable"
+msgstr ""
+
+#: components/client/Controller.ts
+msgid "This account is disabled."
 msgstr ""
 
 #: components/i18n/errors.tsx
@@ -3727,6 +3837,11 @@ msgstr "Accento tonale"
 msgid "Traditional (DD/MM/YYYY)"
 msgstr "Tradizionale (DD/MM/YYYY)"
 
+#: components/app/menus/UserContextMenu.tsx
+#: components/modal/modals/TransferGroup.tsx
+msgid "Transfer Ownership"
+msgstr ""
+
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "Trending GIFs"
 msgstr "GIF popolari"
@@ -3736,6 +3851,7 @@ msgid "Troubleshooting"
 msgstr "Risoluzione problemi"
 
 #: components/auth/src/flows/FlowLogin.tsx
+#: components/auth/src/flows/FlowTs3.tsx
 #, fuzzy
 msgid "Try again"
 msgstr "Riprova"
@@ -3828,6 +3944,22 @@ msgstr "Carica su Gifbox"
 msgid "Use a code or invite link"
 msgstr "Usa un codice o link invito"
 
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Use email instead"
+msgstr ""
+
+#: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
+msgid "Use emoji from other servers"
+msgstr ""
+
+#: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
+msgid "Use External Emojis"
+msgstr ""
+
+#: components/auth/src/flows/FlowCreate.tsx
+msgid "Use TeamSpeak instead"
+msgstr ""
+
 #: components/app/interface/settings/user/Native.tsx
 msgid "Use the graphics card to improve performance."
 msgstr "Usa la scheda grafica per migliorare le prestazioni."
@@ -3868,6 +4000,10 @@ msgstr "Un utente ha lasciato la chiamata"
 #: components/app/interface/settings/ServerSettings.tsx
 msgid "User Management"
 msgstr "Gestione dell'utente"
+
+#: components/i18n/errors.tsx
+msgid "User session not found. Try switching users or logging in again."
+msgstr ""
 
 #: components/app/interface/settings/UserSettings.tsx
 msgid "User Settings"
@@ -3912,6 +4048,10 @@ msgstr "Agli utenti non verrà più chiesto di confermare l'età prima di unirsi
 #: src/interface/navigation/channels/ServerSidebar.tsx
 msgid "Verified"
 msgstr "Verificato"
+
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "Verify with your TeamSpeak account. We send a short code to your TeamSpeak client — no password required."
+msgstr ""
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Verifying your account…"
@@ -3986,10 +4126,14 @@ msgstr "Vuoi cambiare nome utente?"
 msgid "We are working hard on optimising our web app for mobile."
 msgstr "Stiamo lavorando sodo per ottimizzare la nostra app web per dispositivi mobili."
 
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "We could not match your IP to a TeamSpeak client. Select your identity below — the code sent via TeamSpeak still proves it is you."
+msgstr ""
+
 #: components/auth/src/flows/FlowLogin.tsx
 #, fuzzy
-msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check North Chat's status."
-msgstr "Non siamo riusciti a completare il tuo accesso. Prova di nuovo. Se il problema persiste, controlla lo stato di North Chat."
+#~ msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check North Chat's status."
+#~ msgstr "Non siamo riusciti a completare il tuo accesso. Prova di nuovo. Se il problema persiste, controlla lo stato di North Chat."
 
 #: components/auth/src/flows/FlowCreate.tsx
 #, fuzzy
@@ -4045,6 +4189,10 @@ msgstr "Novità"
 msgid "Whether other users can edit these settings"
 msgstr "Consenti agli altri utenti di modificare queste impostazioni"
 
+#: components/i18n/errors.tsx
+msgid "Whoops, you're already logged in as this user!"
+msgstr ""
+
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 msgid "with {0}"
@@ -4086,6 +4234,10 @@ msgstr "Stai per espellere {0}"
 #: components/i18n/errors.tsx
 msgid "You are banned from this server."
 msgstr "Sei stato bannato da questo server."
+
+#: components/auth/src/flows/FlowTs3.tsx
+msgid "You are not online on TeamSpeak right now. Connect to the server, stay online, and try again."
+msgstr ""
 
 #: components/ui/components/features/messaging/composition/MessageBox.tsx
 #, fuzzy
@@ -4288,7 +4440,7 @@ msgstr "La tua richiesta non è andata a buon fine. Contatta l'assistenza."
 msgid "Your role ranking is too low to take this action."
 msgstr "Il grado del tuo ruolo è troppo basso per fare questa azione."
 
-#: components/auth/src/flows/FlowLogin.tsx
+#: components/i18n/errors.tsx
 #, fuzzy
 msgid "Your session ended, possibly because you logged out on another device. Log in again to continue."
 msgstr "La tua sessione è terminata, probabilmente perché hai effettuato il logout su un altro dispositivo. Effettua nuovamente l'accesso per continuare."
