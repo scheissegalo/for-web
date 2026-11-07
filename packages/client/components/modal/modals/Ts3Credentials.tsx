@@ -50,6 +50,16 @@ export function Ts3CredentialsModal(
       });
       props.onClose();
     } catch (err) {
+      if (
+        (err as { type?: string } | undefined)?.type ===
+        "DisallowedContactSupport"
+      ) {
+        snackbar.show({
+          message: t`That email address is not allowed. Use a different one.`,
+        });
+        return;
+      }
+
       showError(err);
     }
   }
