@@ -64,6 +64,11 @@ export default function FlowLogin() {
             <Form onSubmit={performLogin}>
               <Fields fields={["email", "password"]} />
               <Column gap="sm" align class="auth-help-links">
+                <A href="/login/ts3">
+                  <Button variant="tonal">
+                    <Trans>Join with TeamSpeak</Trans>
+                  </Button>
+                </A>
                 <A href="/login/reset">
                   <Button variant="text">
                     <Trans>Forgot password?</Trans>

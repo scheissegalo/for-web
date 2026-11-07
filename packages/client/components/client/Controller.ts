@@ -601,6 +601,30 @@ export default class ClientController {
     return true;
   };
 
+  /**
+   * Log in with a session created by an external auth flow, such as TeamSpeak
+   * verification. The normal onboarding flow handles username selection.
+   */
+  loginWithSession = async (session: {
+    _id: string;
+    token: string;
+    user_id: string;
+  }) => {
+    const createdSession = {
+      _id: session._id,
+      token: session.token,
+      userId: session.user_id,
+      valid: false,
+    };
+
+    this.state.auth.addSession(createdSession);
+    this.lifecycle.transition({
+      type: TransitionType.LoginUncached,
+      session: createdSession,
+    });
+    return true;
+  };
+
   selectUsername = async (username: string) => {
     await this.instance.client.api.post("/onboard/complete", {
       username,

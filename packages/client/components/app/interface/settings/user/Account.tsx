@@ -1,4 +1,11 @@
-import { Match, Show, Switch, createMemo, createSignal } from "solid-js";
+import {
+  Match,
+  Show,
+  Switch,
+  createMemo,
+  createSignal,
+  onMount,
+} from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
 
@@ -53,6 +60,18 @@ function EditAccount(props: { onClose?: () => void }) {
   const { openModal } = useModals();
   const { stow } = useClientLifecycle();
   const [email, setEmail] = createSignal("•••••••••••@•••••••••••");
+  const [ts3Account, setTs3Account] = createSignal(false);
+
+  onMount(() => {
+    client()
+      .account.fetchEmail()
+      .then((value) => {
+        if (value.endsWith("@users.north-industries.com")) {
+          setTs3Account(true);
+        }
+      })
+      .catch(() => {});
+  });
 
   return (
     <CategoryButton.Group>
@@ -109,6 +128,23 @@ function EditAccount(props: { onClose?: () => void }) {
       >
         <Trans>Email</Trans>
       </CategoryButton>
+      <Show when={ts3Account()}>
+        <CategoryButton
+          action="chevron"
+          onClick={() =>
+            openModal({
+              type: "ts3_credentials",
+              client: client(),
+            })
+          }
+          icon={<MdPassword {...iconSize(22)} />}
+          description={
+            <Trans>Add a recovery email and password</Trans>
+          }
+        >
+          <Trans>Set email and password</Trans>
+        </CategoryButton>
+      </Show>
       <CategoryButton
         action="chevron"
         onClick={() =>

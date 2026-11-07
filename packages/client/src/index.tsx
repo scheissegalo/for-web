@@ -20,6 +20,7 @@ import FlowDeleteAccount from "@revolt/auth/src/flows/FlowDelete";
 import FlowLogin from "@revolt/auth/src/flows/FlowLogin";
 import FlowResend from "@revolt/auth/src/flows/FlowResend";
 import FlowReset from "@revolt/auth/src/flows/FlowReset";
+import FlowTs3 from "@revolt/auth/src/flows/FlowTs3";
 import FlowVerify from "@revolt/auth/src/flows/FlowVerify";
 import { ClientContext, SoundContext, useClient } from "@revolt/client";
 import { DeviceContext } from "@revolt/common";
@@ -148,6 +149,7 @@ const routes = () => (
       <Route path="/check" component={FlowCheck} />
       <Route path="/create" component={FlowCreate} />
       <Route path="/create/:code" component={FlowCreate} />
+      <Route path="/ts3" component={FlowTs3} />
       <Route path="/auth" component={FlowLogin} />
       <Route path="/resend" component={FlowResend} />
       <Route path="/reset" component={FlowReset} />

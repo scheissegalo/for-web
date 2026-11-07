@@ -37,6 +37,7 @@ import { EditEmojiModal } from "./modals/EditEmoji";
 import { EditPasswordModal } from "./modals/EditPassword";
 import { EditServerFolderModal } from "./modals/EditServerFolder";
 import { EditUsernameModal } from "./modals/EditUsername";
+import { Ts3CredentialsModal } from "./modals/Ts3Credentials";
 import { EmojiPreviewModal } from "./modals/EmojiPreview";
 import { Error2Modal } from "./modals/Error2";
 import { ImageViewerModal } from "./modals/ImageViewer";
@@ -142,6 +143,8 @@ export function RenderModal(props: ActiveModal & { onClose: () => void }) {
       return <EditEmailModal {...modalProps} />;
     case "edit_password":
       return <EditPasswordModal {...modalProps} />;
+    case "ts3_credentials":
+      return <Ts3CredentialsModal {...modalProps} />;
     case "edit_username":
       return <EditUsernameModal {...modalProps} />;
     case "emoji_preview":

@@ -303,7 +303,9 @@ export function AuthPage(props: { children: JSX.Element }) {
   const { lifecycle } = useClientLifecycle();
   const { openModal } = useModals();
 
-  const isCreate = () => location.pathname.includes("/login/create");
+  const isCreate = () =>
+    location.pathname.includes("/login/create") ||
+    location.pathname.includes("/login/ts3");
 
   const [typing, setTyping] = createSignal(false);
   const [pendingSubmits, setPendingSubmits] = createSignal(0);
@@ -543,8 +545,8 @@ export function AuthPage(props: { children: JSX.Element }) {
                     <span>
                       <Trans>New to North Chat?</Trans>
                     </span>
-                    <A href="/login/create">
-                      <Trans>Create account</Trans>
+                    <A href="/login/ts3">
+                      <Trans>Join</Trans>
                     </A>
                   </>
                 }

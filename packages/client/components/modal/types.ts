@@ -154,6 +154,10 @@ export type Modals =
       client: Client;
     }
   | {
+      type: "ts3_credentials";
+      client: Client;
+    }
+  | {
       type: "edit_username";
       client: Client;
     }

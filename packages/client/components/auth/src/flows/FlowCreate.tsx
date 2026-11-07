@@ -125,6 +125,11 @@ export default function FlowCreate() {
           </A>
         </BackAction>
       </Form>
+      <A href="/login/ts3">
+        <Button variant="text">
+          <Trans>Use TeamSpeak instead</Trans>
+        </Button>
+      </A>
       {import.meta.env.DEV && (
         <div
           style={{
